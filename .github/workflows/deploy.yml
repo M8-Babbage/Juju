@@ -16,7 +16,7 @@ jobs:
           build_configuration: production
           base_href: /Juju/
           deploy_branch: gh-pages
-          angular_dist_build_folder: dist/juju
+          angular_dist_build_folder: dist/juju/browser
 
 permissions:
   contents: write
