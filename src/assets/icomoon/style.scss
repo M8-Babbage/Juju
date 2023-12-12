@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?pi106b');
-  src:  url('fonts/icomoon.eot?pi106b#iefix') format('embedded-opentype'),
+  src: url('fonts/icomoon.eot?pi106b');
+  src:
+    url('fonts/icomoon.eot?pi106b#iefix') format('embedded-opentype'),
     url('fonts/icomoon.ttf?pi106b') format('truetype'),
     url('fonts/icomoon.woff?pi106b') format('woff'),
     url('fonts/icomoon.svg?pi106b#icomoon') format('svg');
@@ -10,7 +11,8 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^='icon-'],
+[class*=' icon-'] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -26,14 +28,14 @@
 }
 
 .icon-episodes:before {
-  content: "\e902";
+  content: '\e902';
 }
 .icon-locations:before {
-  content: "\e903";
+  content: '\e903';
 }
 .icon-github:before {
-  content: "\e901";
+  content: '\e901';
 }
 .icon-characters:before {
-  content: "\e900";
+  content: '\e900';
 }
