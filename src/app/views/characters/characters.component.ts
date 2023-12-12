@@ -84,7 +84,6 @@ export class CharactersComponent implements OnInit {
 
   public onStatusChanges(): void {
     this.status.valueChanges.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((value) => {
-      console.log(value);
       if (value) {
         this.response.results = this.backup.results.filter((item: Character) => {
           return item.status.toLowerCase().includes(value.toLowerCase());

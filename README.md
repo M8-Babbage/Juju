@@ -45,3 +45,9 @@ Una pequeña intro sobre la instalación.
 2. Entre en la carpeta Juju: `cd Juju`
 3. Instale las dependencias: `npm install`.
 4. Ejecute en modo desarrollo: `npx ng serve`
+
+# Test
+
+Para ver la cobertura de los test ejecutar los pasos anteriores sobre ejecución, el siguiente comando proporcionará las estadísticas de cobertura de los test, además, se generará una carpeta llamada coverage en el cual se podría navegar para revisar más a fondo la cobertura.
+
+1. Eejcutar `npm run test`
