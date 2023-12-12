@@ -1,27 +1,47 @@
-# Juju
+# Talent Pitch
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
+## Tabla de contenidos
 
-## Development server
+1. [Informacion](#información)
+2. [Tecnologias](#tecnologías)
+3. [Ejecución](#ejecución)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Información
 
-## Code scaffolding
+Este proyecto está creado con el framework Angular 17, "Usanto tanto sintaxis de control flow como directivas", uso de reactividad en formularios, peticiones http, implementación de responsive y consumo de la API Rest de [Rick & Morty](https://rickandmortyapi.com/documentation), no se implementó ninguna librería externa para el desarrollo del aplicativo.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Estoy implementando:
 
-## Build
+Implementación de loader mientras se realiza la petición al backend.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Conventional commits para crear los commits. [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/).
 
-## Running unit tests
+Git Flow para crear una estrategia de ramas. [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/), "solo trabajé con main pero conozco el flujo de trabajo, feature/fix/release".
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Semver para crear el versionamiento. [Semver](https://semver.org/).
 
-## Running end-to-end tests
+Truncado de texto en las cards.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Variables de CSS un mejor mantenimiento o implementaciones de modos oscuros.
 
-## Further help
+Implementación de Github Actions para hacer un deploy automático sobre los cambios de la rama main sobre Github Pages implementando un Hash Routing "ya que las rutas son manejadas desde el cliente".
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Implementación de animaciones generadas con Animista.
+
+Implementación de iconos svg manipulados como fuentes usando Icomoon.
+
+## Tecnologías
+
+Lista de tecnologías usadas en el proyecto
+
+- [Node JS](https://nodejs.org/en/): Version v20.9.0
+- [Angular](https://www.npmjs.com/package/@angular/cli): Version v17.0.0
+
+## Ejecución
+
+Una pequeña intro sobre la instalación.
+
+1. Clone el repositorio: `git clone https://github.com/M8-Babbage/Juju`
+2. Entre en la carpeta Juju: `cd Juju`
+3. Instale las dependencias: `npm install`.
+4. Ejecute en modo desarrollo: `npx ng serve`
