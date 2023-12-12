@@ -24,7 +24,7 @@ Truncado de texto en las cards.
 
 Variables de CSS un mejor mantenimiento o implementaciones de modos oscuros.
 
-Implementación de Github Actions para hacer un deploy automático sobre los cambios de la rama main sobre Github Pages implementando un Hash Routing "ya que las rutas son manejadas desde el cliente".
+Implementación de Github Page para hacer deploy implementando un Hash Routing "ya que las rutas son manejadas desde el cliente".
 
 Implementación de animaciones generadas con Animista.
 
