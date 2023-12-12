@@ -55,6 +55,19 @@ body::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 
+.wip {
+  height: 100%;
+
+  &--h1 {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--pink);
+    margin-bottom: 10px;
+    margin-left: -10px;
+  }
+}
+
 .loader--wraper {
   display: grid;
   place-items: center;

@@ -1,4 +1,7 @@
+import { CommonModule } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterOutlet } from '@angular/router';
+import { SidebarComponent } from '@components/sidebar/sidebar.component';
 import { AppComponent } from './app.component';
 
 describe('App component', () => {
@@ -7,7 +10,7 @@ describe('App component', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AppComponent]
+      imports: [AppComponent, SidebarComponent, CommonModule, RouterOutlet]
     }).compileComponents();
 
     fixture = TestBed.createComponent(AppComponent);

@@ -24,14 +24,14 @@ const sidebarData: Sidebar[] = [
       },
       {
         id: 1,
-        icon: 'characters',
+        icon: 'locations',
         title: 'Ubicaciones',
         url: '/locations',
         status: false
       },
       {
         id: 1,
-        icon: 'characters',
+        icon: 'episodes',
         title: 'Episodios',
         url: '/episodes',
         status: false
