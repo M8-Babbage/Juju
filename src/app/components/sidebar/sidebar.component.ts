@@ -1,20 +1,18 @@
-import { NgClass } from '@angular/common';
-import { Component, OnInit, inject } from '@angular/core';
+import { NgClass, NgIf } from '@angular/common';
+import { Component, inject } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { Sidebar, sidebarData } from '@data/sidebar.data';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, NgClass],
+  imports: [RouterLink, RouterLinkActive, NgClass, NgIf],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })
-export class SidebarComponent implements OnInit {
+export class SidebarComponent {
   public data: Sidebar[] = sidebarData;
   private router = inject(Router);
-
-  ngOnInit(): void {}
 
   public routeIsActive(url: string): boolean {
     const index = this.router.url.indexOf('?');

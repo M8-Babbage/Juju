@@ -95,3 +95,56 @@ aside {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 600px) {
+  aside {
+    max-width: 80px;
+    padding: 10px;
+    padding-top: 40px;
+    align-items: center;
+
+    img {
+      width: 100%;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        display: none;
+      }
+
+      li {
+        padding-left: 0px;
+
+        i {
+          font-size: 30px;
+          color: var(--sidebar-disable);
+        }
+
+        p {
+          display: none;
+        }
+      }
+
+      li:hover {
+        color: var(--blue);
+
+        i {
+          color: var(--blue);
+        }
+      }
+
+      li.active-link {
+        border: initial;
+        padding-left: 0px;
+        color: var(--pink);
+        -webkit-animation: text-focus-in 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+        animation: text-focus-in 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+      }
+    }
+  }
+}

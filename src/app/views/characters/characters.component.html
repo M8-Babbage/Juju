@@ -2,7 +2,6 @@
   <div class="characters--banner">
     <img class="slide-in-fwd-center" src="../../../assets/images/banner.jpg" alt="Banner Rick & Morty" />
   </div>
-
   <div class="characters--content">
     <h1>Personajes</h1>
     <div class="characters--options">
@@ -27,6 +26,10 @@
     <div class="characters--layout">
       @for (item of response.results; track $index) {
       <app-card [item]="item" />
+      } @empty {
+      <div class="loader--wraper">
+        <div class="loader"></div>
+      </div>
       }
     </div>
   </div>
