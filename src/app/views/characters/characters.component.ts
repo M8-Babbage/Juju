@@ -46,8 +46,7 @@ export class CharactersComponent implements OnInit {
   }
 
   public goToNextPage(): void {
-    if (this.page >= this.response.info.pages) {
-    } else {
+    if (!(this.page >= this.response.info.pages)) {
       this.page++;
       this.resetFilters();
       this.router.navigate(['/characters'], { queryParams: { page: this.page } });
@@ -55,8 +54,7 @@ export class CharactersComponent implements OnInit {
   }
 
   public goToPreviousPage(): void {
-    if (this.page <= 1) {
-    } else {
+    if (!(this.page <= 1)) {
       this.page--;
       this.resetFilters();
       this.router.navigate(['/characters'], { queryParams: { page: this.page } });

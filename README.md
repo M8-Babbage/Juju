@@ -51,4 +51,6 @@ Una pequeña intro sobre la instalación.
 
 Para ver la cobertura de los test ejecutar los pasos anteriores sobre ejecución, el siguiente comando proporcionará las estadísticas de cobertura de los test, además, se generará una carpeta llamada coverage en el cual se podría navegar para revisar más a fondo la cobertura.
 
-1. Eejcutar `npm run test`
+1. Ejecutar `npm run test`
+
+![Coverage](https://github.com/M8-Babbage/juju/blob/main/src/assets/images/coverage.png)
