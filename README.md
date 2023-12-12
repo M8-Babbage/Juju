@@ -1,4 +1,4 @@
-# Talent Pitch
+# Juju - Rick & Morty
 
 ## Tabla de contenidos
 
