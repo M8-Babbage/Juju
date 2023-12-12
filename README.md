@@ -5,6 +5,7 @@
 1. [Informacion](#información)
 2. [Tecnologias](#tecnologías)
 3. [Ejecución](#ejecución)
+4. [Tests](#tests)
 
 ## Información
 
@@ -46,7 +47,7 @@ Una pequeña intro sobre la instalación.
 3. Instale las dependencias: `npm install`.
 4. Ejecute en modo desarrollo: `npx ng serve`
 
-# Test
+## Tests
 
 Para ver la cobertura de los test ejecutar los pasos anteriores sobre ejecución, el siguiente comando proporcionará las estadísticas de cobertura de los test, además, se generará una carpeta llamada coverage en el cual se podría navegar para revisar más a fondo la cobertura.
 
