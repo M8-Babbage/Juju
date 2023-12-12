@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('./assets/icomoon/style.scss');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --background: #f9faff;
+  --border: #dee4ed;
+  --sidebar-disable: #bbc8d5;
+  --blue: #96d9e7;
+  --pink: #fd79a3;
+  --alive: #2ecc71;
+  --dead: #e74c3c;
+  --unkown: #bdc3c7;
+  --secondary: #3f3f3d;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background);
+}

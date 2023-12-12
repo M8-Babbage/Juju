@@ -1,0 +1,20 @@
+<aside>
+  <img src="../../../assets/images/logo.webp" alt="Rick & Morty logo" />
+  @for (menu of data; track $index) {
+  <ul>
+    <span>{{ menu.title }}</span>
+    @for (item of menu.items; track $index) {
+    <li
+      (click)="goTo(item.url)"
+      [ngClass]="{
+        'text-focus-in': true,
+        'active-link': routeIsActive(item.url)
+      }"
+    >
+      <i class="{{ 'icon icon-' + item.icon }}"></i>
+      {{ item.title }}
+    </li>
+    }
+  </ul>
+  }
+</aside>

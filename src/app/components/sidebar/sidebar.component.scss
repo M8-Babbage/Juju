@@ -1,0 +1,97 @@
+aside {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  max-width: 250px;
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+
+  img {
+    margin-bottom: 20px;
+    width: 70%;
+    height: auto;
+    border-radius: 30px;
+  }
+
+  ul {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+
+    span {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 10px;
+      color: #bcc9d6;
+    }
+
+    li {
+      display: flex;
+      list-style: none;
+      color: var(--sidebar-disable);
+      margin-bottom: 20px;
+      text-align: center;
+      column-gap: 10px;
+      cursor: pointer;
+      padding-left: 25px;
+
+      i {
+        font-size: 20px;
+        color: var(--sidebar-disable);
+      }
+    }
+
+    li:hover {
+      color: var(--blue);
+
+      i {
+        color: var(--blue);
+      }
+    }
+
+    li.active-link {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      padding-left: calc(25px - 6px);
+      border-left: 6px solid var(--pink);
+      color: var(--pink);
+      -webkit-animation: text-focus-in 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+      animation: text-focus-in 0.1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+
+      i {
+        color: var(--pink);
+      }
+    }
+  }
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}

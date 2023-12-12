@@ -1,0 +1,20 @@
+<article *ngIf="(episodeSubject | async) && item" class="article" (click)="goToCharacter()">
+  <img class="article--image" [src]="item.image" [alt]="item.name" />
+  <div class="article--content">
+    <h4>{{ item.name | titlecase }}</h4>
+    <div class="article--name">
+      <div
+        class="status"
+        [ngClass]="{
+            'status--alive': item.status === 'Alive',
+            'status--dead': item.status === 'Dead',
+          }"
+      ></div>
+      <span>{{ item.status | titlecase }} - {{ item.species | titlecase }}</span>
+    </div>
+    <span class="title">Ubicación:</span>
+    <span class="description">{{ item.location.name | titlecase }}</span>
+    <span class="title">Visto por primera vez en:</span>
+    <span class="description">{{ episode.name || '' | titlecase }} - {{ episode.air_date | titlecase }}</span>
+  </div>
+</article>
