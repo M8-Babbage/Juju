@@ -1,0 +1,10 @@
+.card {
+  display: grid;
+  height: 100vh;
+  place-items: center;
+
+  app-card {
+    display: block;
+    width: 300px;
+  }
+}
